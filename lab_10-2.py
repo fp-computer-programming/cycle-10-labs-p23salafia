@@ -1,19 +1,12 @@
 #Jan Salafia Lab 10-2 1/20/2023
-input_number = input("Please input a number")
-input_number = int(input_number)
+list = [1,2,3,4,5,6,7,8,9]
+multof3 = 0
 
-sum = 0
+while True:                 #If there is a list
+    if list[multof3] % 3 == 0:  #Find multiples of 3
+        print(list[multof3])    #Print multiples of 3
+    if multof3 == len(list)-1:  #If the list ends
+        break                   #Break the loop
+    multof3 += 1               
 
-if input_number == -1:
-    print(sum)
-
-sum += input_number
-
-while input != -1:
-    x = input("Please input a number that will be added to all previous numbers: ")
-    x = int(x)
-    if x ==-1:
-        print(sum)
-        break
-    sum += x
 
